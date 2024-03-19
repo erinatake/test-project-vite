@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preview": "vite preview",
-    "build": "vite build && xcopy /E /Y dist docs",
-    "rebuild": "vite build && rmdir /S /Q docs && xcopy /E /Y dist docs",
-    "git": "git add . && git commit && git push origin main"
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
